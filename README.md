@@ -58,13 +58,12 @@ data-warehouse-project/
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
 │
 ├── docs/                               # Project documentation and architecture details
-│   ├── etl.drawio                      # Draw.io file shows all different techniquies and methods of ETL
 │   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
-│
+│   ├── medallion_data_flow.drawio      # Draw.io file for the data flow diagram
+|   ├── integration_model.drawio        # Draw.io file details how the tables relate
+│   ├── data_model.drawio               # Draw.io file for data models (star schema)
+│   
 ├── scripts/                            # SQL scripts for ETL and transformations
 │   ├── bronze/                         # Scripts for extracting and loading raw data
 │   ├── silver/                         # Scripts for cleaning and transforming data
@@ -74,8 +73,7 @@ data-warehouse-project/
 │
 ├── README.md                           # Project overview and instructions
 ├── LICENSE                             # License information for the repository
-├── .gitignore                          # Files and directories to be ignored by Git
-└── requirements.txt                    # Dependencies and requirements for the project
+
 ```
 ---
 ## 🛡️ License
@@ -83,7 +81,10 @@ data-warehouse-project/
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
 
 ---
-## 🌟 About Me
+## Project Attribution
 
-Hi there! I'm **Maria Earlywine**. I'm a former federal government finance analyst with 22 years of experience, and now I've added Python, SQL, data modeling, and ETL concepts to my skills. 
+This project was completed by following the Data With Baraa SQL Data Warehouse tutorial. I implemented and tested the SQL Server warehouse 
+locally to strengthen my skills in ETL development, data cleansing, data quality validation, and dimensional modeling.
+
+I created and maintained the SQL scripts, testing queries, project documentation, and data-model diagrams in this repository.
 
